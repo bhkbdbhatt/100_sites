@@ -1,0 +1,22 @@
+{
+  "name": "@pg/spec-schema",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Single source of truth for the HUNDRED cross-component contracts: RFC 8785 canonical JSON, BLAKE3 spec hashing, JSON Schema 2020-12 definitions, the version-tolerant reader, and RFC 9457 problem details.",
+  "exports": {
+    ".": "./dist/index.js",
+    "./schemas": "./dist/schemas/index.js",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc --build",
+    "export-schemas": "node ./dist/scripts/export-schemas.js"
+  },
+  "dependencies": {
+    "@noble/hashes": "1.5.0",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1"
+  }
+}

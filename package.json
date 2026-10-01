@@ -1,0 +1,35 @@
+{
+  "name": "hundred",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HUNDRED - three-plugin pipeline turning 100 natural-language prompts into 100 static websites.",
+  "engines": {
+    "node": ">=22.11.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "typecheck": "tsc --build",
+    "test": "node scripts/smoke-foundation.mjs && node scripts/smoke-compiler.mjs && node scripts/smoke-ssg.mjs",
+    "test:e2e": "node scripts/smoke-batch.mjs",
+    "smoke": "npm run test && npm run test:e2e",
+    "lint": "node scripts/lint.mjs",
+    "batch": "node packages/batch-orchestrator/dist/cli.js",
+    "batch:100": "node scripts/run-100.mjs",
+    "gen:batch": "node scripts/gen-batch.mjs 100"
+  },
+  "dependencies": {
+    "@noble/hashes": "1.5.0",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "yaml": "2.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "typescript": "5.7.2"
+  }
+}

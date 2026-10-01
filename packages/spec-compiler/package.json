@@ -1,0 +1,16 @@
+{
+  "name": "@pg/spec-compiler",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Prompt -> Structured Spec Compiler. One natural-language prompt in, one deterministic, schema-valid, hash-bound SiteSpec out.",
+  "exports": { ".": "./dist/index.js" },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "bin": { "speccompile": "./dist/cli.js" },
+  "scripts": { "build": "tsc --build" },
+  "dependencies": {
+    "@pg/spec-schema": "1.0.0",
+    "@pg/telemetry": "0.4.0",
+    "@pg/redaction": "0.3.0"
+  }
+}

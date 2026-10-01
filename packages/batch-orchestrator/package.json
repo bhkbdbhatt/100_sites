@@ -1,0 +1,18 @@
+{
+  "name": "@pg/batch-orchestrator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Batch prompt orchestrator. Two-lane concurrency, deadline and retry semantics, fallback ladder, atomic content-addressed publication, checkpoint/resume, aggregated reporting.",
+  "exports": { ".": "./dist/index.js" },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "bin": { "specbatch": "./dist/cli.js" },
+  "scripts": { "build": "tsc --build" },
+  "dependencies": {
+    "@pg/spec-schema": "1.0.0",
+    "@pg/spec-compiler": "1.0.0",
+    "@pg/ssg-adapter-astro": "1.0.0",
+    "@pg/telemetry": "0.4.0",
+    "yaml": "2.5.1"
+  }
+}

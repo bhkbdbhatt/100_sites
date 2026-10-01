@@ -1,0 +1,14 @@
+{
+  "name": "@pg/ssg-adapter-astro",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-native SSG adapter. Deterministic, budget-enforcing, zero-JS-by-default execution layer over Astro (with a hermetic static driver).",
+  "exports": { ".": "./dist/index.js" },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "dependencies": {
+    "@pg/spec-schema": "1.0.0",
+    "@pg/telemetry": "0.4.0"
+  },
+  "optionalDependencies": {}
+}

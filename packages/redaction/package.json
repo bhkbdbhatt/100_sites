@@ -1,0 +1,10 @@
+{
+  "name": "@pg/redaction",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "Prompt sanitization: PII/secret redaction before egress (FR-A2) and prompt-injection neutralization (FR-A3).",
+  "exports": { ".": "./dist/index.js" },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "dependencies": { "@pg/spec-schema": "1.0.0" }
+}

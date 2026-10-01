@@ -1,0 +1,12 @@
+{
+  "//": "Solution-style config. Build every package with `npm run build`.",
+  "files": [],
+  "references": [
+    { "path": "./packages/spec-schema" },
+    { "path": "./packages/telemetry" },
+    { "path": "./packages/redaction" },
+    { "path": "./packages/spec-compiler" },
+    { "path": "./packages/ssg-adapter-astro" },
+    { "path": "./packages/batch-orchestrator" }
+  ]
+}

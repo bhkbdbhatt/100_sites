@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tsbuildinfo
+out/
+staging/
+blobs/
+.cache/
+spec-cache/
+*.log
+.env
+.env.*
+.work
+undefined/

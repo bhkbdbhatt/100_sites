@@ -1,0 +1,10 @@
+{
+  "name": "@pg/telemetry",
+  "version": "0.4.0",
+  "type": "module",
+  "description": "Structured spans, counters and histograms. Zero mandatory dependencies; the collector sink is pluggable and never blocks the pipeline.",
+  "exports": { ".": "./dist/index.js" },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "dependencies": { "@pg/spec-schema": "1.0.0" }
+}
